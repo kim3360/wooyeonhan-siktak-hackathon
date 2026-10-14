@@ -14,25 +14,27 @@
 
 Node.js 20.19+ (20.x), 22.13+ (22.x) 또는 24+가 필요합니다. `.nvmrc`는 초기 설정을 검증한 22.17.0을 지정합니다.
 
+`packageManager` 필드에 고정한 pnpm 10.28.0을 사용합니다.
+
 ```sh
 nvm use
-npm ci
-npm run dev
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
 ## 명령어
 
-| 명령어                 | 설명                                       |
-| ---------------------- | ------------------------------------------ |
-| `npm run dev`          | 개발 서버 실행                             |
-| `npm run build`        | TypeScript 검사 후 프로덕션 빌드 (`dist/`) |
-| `npm run preview`      | 빌드 결과 미리보기                         |
-| `npm run typecheck`    | TypeScript 검사                            |
-| `npm run lint`         | ESLint 검사                                |
-| `npm run lint:fix`     | ESLint 자동 수정                           |
-| `npm run format`       | Prettier 포맷 적용                         |
-| `npm run format:check` | Prettier 포맷 검사                         |
-| `npm run check`        | ESLint, Prettier, 프로덕션 빌드 일괄 검증  |
+| 명령어              | 설명                                       |
+| ------------------- | ------------------------------------------ |
+| `pnpm dev`          | 개발 서버 실행                             |
+| `pnpm build`        | TypeScript 검사 후 프로덕션 빌드 (`dist/`) |
+| `pnpm preview`      | 빌드 결과 미리보기                         |
+| `pnpm typecheck`    | TypeScript 검사                            |
+| `pnpm lint`         | ESLint 검사                                |
+| `pnpm lint:fix`     | ESLint 자동 수정                           |
+| `pnpm format`       | Prettier 포맷 적용                         |
+| `pnpm format:check` | Prettier 포맷 검사                         |
+| `pnpm check`        | ESLint, Prettier, 프로덕션 빌드 일괄 검증  |
 
 ## 기본 구조
 

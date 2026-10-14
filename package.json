@@ -12,7 +12,7 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "typecheck": "tsc -b --pretty",
-    "check": "npm run lint && npm run format:check && npm run build"
+    "check": "pnpm lint && pnpm format:check && pnpm build"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.104.2",
@@ -41,5 +41,6 @@
   },
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24"
-  }
+  },
+  "packageManager": "pnpm@10.28.0"
 }
